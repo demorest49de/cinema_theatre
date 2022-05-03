@@ -17,6 +17,7 @@ const firstRender = data => {
 
 const renderVideo = async () => {
     const data = await getTriends()
+    console.log('data: ',data)
     firstRender(data.results[0])
 }
 

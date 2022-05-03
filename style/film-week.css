@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px; 
+    gap: 30px;
     position: relative;
 }
 
@@ -58,7 +58,7 @@
 
 .film-week__title_origin {
     position: absolute;
-    color: #ccc;
+    color: #cccccc;
     bottom: 3%; left: 2%;
     font-family: Raleway, sans-serif;
     font-weight: 700;
