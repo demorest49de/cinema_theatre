@@ -18,3 +18,15 @@ export const getTriends = async (type = 'all', period = 'day', page = 1) => {
     const url = `${_BASE_URL}/trending/${type}/${period}?api_key=${_API_KEY}${_LANGUAGE}&page=${page}`
     return await getData(url)
 }
+
+export const getTop = async (type, page = 1) => {
+
+    const url = `${_BASE_URL}/${type}/popular?api_key=${_API_KEY}${_LANGUAGE}&page=${page}`
+    return await getData(url)
+}
+
+export const getPopular = async (type, page = 1) => {
+
+    const url = `${_BASE_URL}/${type}/top_rated?api_key=${_API_KEY}${_LANGUAGE}&page=${page}`
+    return await getData(url)
+}
